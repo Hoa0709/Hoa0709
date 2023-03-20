@@ -1,0 +1,2 @@
+Command CMD:
+ngrok http -region ap -auth="admin:666" 8080"
