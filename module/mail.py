@@ -23,7 +23,7 @@ def sendMail(toaddr,filename,body):
             msg.attach(part)
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, 'Twom@3107')
+        server.login(fromaddr, '')
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
